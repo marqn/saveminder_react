@@ -4,24 +4,24 @@ export default class Navigation extends Component {
 
     render() {
         return (
-            <nav class="navbar navbar-light bg-light d-flex justify-content-between">
+            <nav className="navbar navbar-light bg-light d-flex justify-content-between">
                 <div>
-                <span class="navbar-brand">SaveMinder</span>
+                <span className="navbar-brand">SaveMinder</span>
                 </div>
 
                 <div>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Strona główna</a>
+                    <ul className="nav">
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#">Strona główna</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#">Nauka</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Manager wyrazów</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Nauka</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Manager wyrazów</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Statystyki</a>
+                            <a className="nav-link" href="#">Statystyki</a>
                         </li>
                     </ul>
                 </div>
@@ -29,7 +29,7 @@ export default class Navigation extends Component {
                 
 
                 <div>
-                    <button class="btn btn-outline-success ">Zaloguj się</button>
+                    <button className="btn btn-outline-success ">Zaloguj się</button>
                 </div>
                     
             </nav>

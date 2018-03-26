@@ -4,8 +4,8 @@ export default class Content extends Component {
 
     render() {
         return (
-                <div class='content'>
-                    <div class="font-weight-bold" >
+                <div className='content'>
+                    <div className="font-weight-bold" >
                         This text should overflow the parent.
                     </div>
                 </div>
