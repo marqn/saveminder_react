@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 export default class Navigation extends Component {
 
@@ -6,19 +7,19 @@ export default class Navigation extends Component {
         return (
             <nav className="navbar navbar-light bg-light d-flex justify-content-between">
                 <div>
-                <span className="navbar-brand">SaveMinder</span>
+                    <span className="navbar-brand">SaveMinder</span>
                 </div>
 
                 <div>
                     <ul className="nav">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Strona główna</a>
+                            <Link className="nav-link active" to="/">Strona główna</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Nauka</a>
+                            <Link className="nav-link active" to="/">Nauka główna</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Manager wyrazów</a>
+                            <Link className="nav-link active" to="/wordsmanager">Manager wyrazów</Link>
                         </li>
                         <li class="nav-item">
                             <a className="nav-link" href="#">Statystyki</a>
@@ -26,12 +27,11 @@ export default class Navigation extends Component {
                     </ul>
                 </div>
 
-                
 
                 <div>
                     <button className="btn btn-outline-success ">Zaloguj się</button>
                 </div>
-                    
+
             </nav>
         );
     }
