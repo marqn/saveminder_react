@@ -8,6 +8,8 @@ import MainPage from "./pages/MainPage";
 import WordsManagerPage from "./pages/WordsManagerPage";
 import LearnPage from "./pages/LearnPage";
 import StatisticPage from './pages/StatisticPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 class App extends Component {
 
@@ -18,11 +20,15 @@ class App extends Component {
                 <div className="App">
                     <Navigation/>
                     
-                    <Route exact path="/" component={MainPage} />
-                    <Route path="/learnpage" component={LearnPage} />
-                    <Route path="/wordsmanager" component={WordsManagerPage} />
-                    <Route path="/statistic" component={StatisticPage} />
+                    <div className="container">
+                      <Route exact path="/" component={MainPage} />
+                      <Route path="/learnpage" component={LearnPage} />
+                      <Route path="/wordsmanager" component={WordsManagerPage} />
+                      <Route path="/statistic" component={StatisticPage} />
 
+                      <Route path="/login" component={LoginPage} />
+                      <Route path="/register" component={RegisterPage} />
+                    </div>
                     <Footer/>
                 </div>
             </Router>

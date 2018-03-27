@@ -6,8 +6,10 @@ export default class MainPage extends Component {
     }
     render() {
         return(
-            <div>
-                Main page
+            <div class="row-fluid">
+                <div class="centering text-center">
+                Am in the Center Now :-)
+                </div>
             </div>
         )
     }

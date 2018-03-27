@@ -5,9 +5,10 @@ export default class Navigation extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-light bg-light d-flex justify-content-between">
+            <nav className="navbar navbar-light bg-light d-flex justify-content-between ">
                 <div>
-                    <span className="navbar-brand">SaveMinder</span>
+                    <Link className="navbar-brand" to="/">SaveMinder</Link>
+                    
                 </div>
 
                 <div>
@@ -29,7 +30,7 @@ export default class Navigation extends Component {
 
 
                 <div>
-                    <button className="btn btn-outline-success ">Zaloguj się</button>
+                    <Link className="btn btn-outline-success" to="/login">Zaloguj się</Link>
                 </div>
 
             </nav>
