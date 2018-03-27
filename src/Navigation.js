@@ -16,13 +16,13 @@ export default class Navigation extends Component {
                             <Link className="nav-link active" to="/">Strona główna</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/">Nauka główna</Link>
+                            <Link className="nav-link active" to="/learnpage">Nauka</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link active" to="/wordsmanager">Manager wyrazów</Link>
                         </li>
                         <li class="nav-item">
-                            <a className="nav-link" href="#">Statystyki</a>
+                            <Link className="nav-link active" to="/statistic">Statystyki</Link>
                         </li>
                     </ul>
                 </div>

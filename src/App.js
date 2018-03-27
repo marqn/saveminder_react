@@ -6,6 +6,8 @@ import Footer from './Footer';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import MainPage from "./pages/MainPage";
 import WordsManagerPage from "./pages/WordsManagerPage";
+import LearnPage from "./pages/LearnPage";
+import StatisticPage from './pages/StatisticPage';
 
 class App extends Component {
 
@@ -15,9 +17,12 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Navigation/>
+                    
                     <Route exact path="/" component={MainPage} />
+                    <Route path="/learnpage" component={LearnPage} />
                     <Route path="/wordsmanager" component={WordsManagerPage} />
-                    {/*<Content/>*/}
+                    <Route path="/statistic" component={StatisticPage} />
+
                     <Footer/>
                 </div>
             </Router>
