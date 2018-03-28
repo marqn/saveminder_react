@@ -11,22 +11,23 @@ export default class LoginPage extends Component {
                 <div class="col-sm"></div>
 
                 <div class="col-sm ">
+                <h1 class="display-4">Logowanie</h1>
                 <form>
-                    <div class="form-group">
-                        <p>Nie masz jeszcze konta <Link to="/register">Zarejestruj się</Link></p>
-                    </div>
-
-                    <div class="form-group">
-                        <button className="btn btn-primary">Przez Facebook</button>
-                    </div>
-
-                    <div class="form-group">
-                        <button className="btn btn-success">Przez Google</button>
+                        <div class="form-group">
+                            <p>Nie masz jeszcze konta <Link to="/register">Zarejestruj się</Link></p>
                         </div>
-                    
-                    <div class="form-group">
-                        <p>lub</p>
-                    </div>
+
+                        <div class="form-group">
+                            <button className="btn btn-light btn-lg btn-block"><i class="fab fa-facebook-f fa-lg" ></i>  zaloguj się</button>
+                        </div>
+
+                        <div class="form-group">
+                            <button className="btn btn-light btn-lg btn-block"><i class="fab fa-google-plus-g fa-lg"></i>  zaloguj się</button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <p>lub</p>
+                        </div>
                     
                     
                         <div class="form-group">
