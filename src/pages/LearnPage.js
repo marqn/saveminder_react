@@ -7,7 +7,7 @@ export default class LearnPage extends Component {
     render() {
         return(
             <div>
-                Learn page
+                Learn page Milena
             </div>
         )
     }
