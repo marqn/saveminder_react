@@ -6,8 +6,13 @@ export default class WordsManagerPage extends Component {
     }
     render() {
         return(
-            <div>
-                Words Manager Page...
+            <div className="">
+                <div className="jumbotron btn">
+                <h1 class="display-4">Add Category</h1>
+                </div>
+                <div className="jumbotron btn">
+                <h1 class="display-4">Add Words</h1>
+                </div>
             </div>
         )
     }
